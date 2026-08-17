@@ -15,7 +15,13 @@ const sidebars: SidebarsConfig = {
         'sandbox/lifecycle',
         'sandbox/commands',
         'sandbox/filesystem',
+        'sandbox/prewarm-pools',
       ],
+    },
+    {
+      type: 'category',
+      label: '存储',
+      items: ['storage/oss-mount'],
     },
     {
       type: 'category',
