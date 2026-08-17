@@ -1,0 +1,86 @@
+.hero {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  padding: 7rem 0;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(255, 107, 0, 0.18), transparent 28%),
+    linear-gradient(135deg, #fff9f3 0%, #fff 52%, #f2f7ff 100%);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.eyebrow {
+  color: var(--ifm-color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 2rem 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.18rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.capabilities {
+  padding: 4rem 0 6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  min-height: 220px;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  background: var(--ifm-background-surface-color);
+}
+
+.card span {
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+}
+
+.card h2 {
+  margin: 2.4rem 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
