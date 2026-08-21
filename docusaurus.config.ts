@@ -3,8 +3,8 @@ import type {Options, ThemeConfig} from '@docusaurus/preset-classic'
 import {themes as prismThemes} from 'prism-react-renderer'
 
 const config: Config = {
-  title: 'E2B Sandbox 中文文档',
-  tagline: '面向 AI Agent 的安全、隔离代码执行环境',
+  title: '自建 E2B Sandbox 使用指南',
+  tagline: '面向自建 E2B 集群的接入、开发与运维指南',
   favicon: 'img/favicon.svg',
   url: 'https://shmilyxm.github.io',
   baseUrl: '/e2b-docs/',
@@ -53,7 +53,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'E2B Sandbox',
+      title: '自建 E2B Sandbox',
       logo: {
         alt: 'E2B Sandbox',
         src: 'img/logo.svg',
@@ -84,22 +84,24 @@ const config: Config = {
             {label: '生命周期', to: '/docs/sandbox/lifecycle'},
             {label: '执行命令', to: '/docs/sandbox/commands'},
             {label: '文件系统', to: '/docs/sandbox/filesystem'},
+            {label: '网络访问', to: '/docs/sandbox/network'},
+            {label: '自定义 Template', to: '/docs/templates/overview'},
           ],
         },
         {
           title: '更多',
           items: [
             {label: 'GitHub', href: 'https://github.com/ShmilyXm/e2b-docs'},
-            {label: 'E2B 官方文档', href: 'https://docs.e2b.dev/'},
+            {label: '上游 E2B 文档', href: 'https://docs.e2b.dev/'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} E2B Sandbox 中文文档`,
+      copyright: `Copyright © ${new Date().getFullYear()} 自建 E2B Sandbox 使用指南`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash', 'python'],
+      additionalLanguages: ['bash', 'python', 'typescript', 'docker'],
     },
   } satisfies ThemeConfig,
 }

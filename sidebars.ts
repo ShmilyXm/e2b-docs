@@ -6,17 +6,25 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '开始使用',
       collapsible: false,
-      items: ['intro', 'quick-start', 'connection'],
+      items: ['intro', 'quick-start', 'connection', 'cli'],
     },
     {
       type: 'category',
       label: 'Sandbox',
       items: [
+        'sandbox/create',
         'sandbox/lifecycle',
         'sandbox/commands',
         'sandbox/filesystem',
+        'sandbox/network',
+        'sandbox/code-interpreter',
         'sandbox/prewarm-pools',
       ],
+    },
+    {
+      type: 'category',
+      label: 'Templates',
+      items: ['templates/overview', 'templates/build'],
     },
     {
       type: 'category',
@@ -25,7 +33,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '自建服务',
+      label: '运维与排障',
       items: ['self-hosted/troubleshooting'],
     },
   ],
